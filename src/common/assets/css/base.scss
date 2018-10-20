@@ -1,14 +1,12 @@
 @import './normalize.css';
 *{
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 html, body {
   height: 100%;
   margin: 0;
-}
-ul, ol {
-  margin: 0;
-  padding: 0;
 }
 .test-btn{
   border: none;
@@ -48,7 +46,19 @@ ul, ol {
       color: #666;
     }
     .navigator-item{
-      padding: 14px 20px;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: all .2s;
+      border-radius: 4px;
+      margin: 0 2px;
+      &.active{
+        color: #fff;
+        background-color: #ffbb42;;
+      }
+      &:hover{
+        color: #fff;
+        background-color: #ffbb42;
+      }
     }
   }
 }
